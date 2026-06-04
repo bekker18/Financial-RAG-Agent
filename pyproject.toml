@@ -1,0 +1,16 @@
+[project]
+name = "financial-rag-agent"
+version = "0.1.0"
+description = "Financial Research Agent with RAG using Groq, Gemini embeddings, Chroma, and SEC filings."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+financial-agent = "financial_agent.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

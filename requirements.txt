@@ -1,0 +1,9 @@
+groq
+google-genai
+chromadb
+python-dotenv
+requests
+beautifulsoup4
+typer[all]
+rich
+streamlit
