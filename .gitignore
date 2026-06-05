@@ -1,10 +1,56 @@
+# Environment variables / secrets
 .env
+.env.*
+!.env.example
+
+# Python virtual environments
 .venv/
+venv/
+env/
+ENV/
+
+# uv local/cache files
+.uv-cache/
+uv-cache/
+.python-build-standalone/
+
+# Keep uv.lock committed for reproducible installs
+# Do NOT ignore:
+# uv.lock
+
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit local secrets
+.streamlit/secrets.toml
+
+# Local data and vector database
 data/raw/
 data/chroma/
+*.sqlite
+*.sqlite3
+
+# OS / editor files
 .DS_Store
-*.egg-info/
-*.egg
-.eggs/
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
